@@ -59,7 +59,7 @@ RUN if [ -z ${MAVEN_URL+x} ]; then \
         MAVEN_URL="https://downloads.apache.org/maven/maven-3/${MAVEN_RELEASE}/binaries/apache-maven-${MAVEN_RELEASE}-bin.tar.gz"; \
     fi &&\
     mkdir -p /usr/share/maven &&\
-    curl -fsSL ${MAVEN_URL} | tar -zxC /usr/share/maven --strip-components=1
+    curl -fsSL ${MAVEN_URL} | tar -zxC /usr/share/maven --strip-components=1 &&\
     ln -s /usr/share/maven/bin/mvn /usr/bin/mvn &&\
     mvn -version
 
