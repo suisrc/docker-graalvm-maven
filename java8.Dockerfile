@@ -1,7 +1,7 @@
 FROM debian:buster-slim
 # FROM debian:buster
 # args
-ARG GRAALVM_RELEASE=vm-20.1.0
+ARG GRAALVM_RELEASE=vm-20.2.0
 ARG JAVA_RELEASE=java8
 ARG GRAALVM_URL
 
